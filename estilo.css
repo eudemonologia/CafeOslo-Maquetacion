@@ -1,0 +1,246 @@
+/* General */
+* {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: inherit;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body, header, #conversion {
+    height:100%;
+    width:100%;
+}
+html, body, header, section, .fila {
+    position: relative;
+}
+h1, #btn-menu {
+    display: none;
+}
+h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+h3, dt {
+    font-size: 24px;
+    font-weight: 800;
+}
+p, dd, address {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: inherit;
+}
+b, nav li {
+    font-weight: 800;
+}
+h1, h2, h3, p, nav, address, .icon, .descripciones {
+    padding: 20px 0px;
+}
+.ampliado {
+    padding: 30px 0px;
+}
+.centrar {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+}
+nav {
+    overflow:hidden;
+}
+span {
+    display: inline-block
+}
+
+/* Invariable */
+
+nav img {
+    float: left;
+    margin: 20px 15px;
+}
+header {
+    background: url(imagenes/Fondo.jpg);
+    color: #f5f0ed;
+}
+#conversion {
+    background: url(imagenes/Fondo2.jpg);
+    color: #f5f0ed;
+}
+.texto-pantalla {
+    top: 30%;
+    max-width: 525px;
+}
+.separador {
+    width: 120px;
+    height: 2px;
+    background-color: #f5f0ed;
+}
+.roja {
+    background-color: #d03b40;
+    color: #ded6c0;
+}
+.beige {
+    background-color: #ded6c0;
+    color: #d03b40;
+}
+button {
+    background: none;
+    border: solid;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+dl {
+    background-color: #f5f0ed;
+    overflow: hidden;
+    padding: 30px 15px;
+    margin: 0px;
+}
+dt, dd {
+    color: #3c3c3b;
+    text-align: left;
+}
+
+/* Variable */
+
+header, #conversion {
+    background-size: cover;
+    background-position: center;
+}
+.columnas {
+    height: 100%;
+    width: 100%;
+}
+.texto-fila {
+    top: 7%;
+    max-width: 425px;
+}
+.fila {
+    height: 50%;
+    width: 100%;
+}
+.icon {
+    height: 100px;
+}
+footer {
+    background-color: #241d1b;
+    text-align: left;
+    color: #ded6c0;
+    padding: 20px 15px;
+}
+
+@media screen and (max-width: 767px) {
+    #menu {
+        position: absolute;
+        clear: both;
+        overflow: hidden;
+        right: 15px;
+        padding: 0px;
+        top: 100px;
+        width: 50%;
+        background-color: #d03b40;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    #boton-menu {
+        background-color: #d03b40;
+        padding: 7px 5px;
+        float: right;
+        margin: 20px 15px;
+    }
+    .linea-menu {
+        background-color: #ded6c0;
+        width: 40px;
+        height: 5px;
+        border-radius: 5px;
+        margin: 5px 0px;
+    }
+    li {
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        background-color: #d03b40;
+        border: solid 1px;
+        border-color: #ded6c0;
+    }
+    .no-desplegado {
+        max-height: 0px;
+    }
+    #btn-menu:checked ~ #menu {
+        max-height: 220px;
+    }
+    .js .menu-desplegado {
+        max-height: 220px;
+    }
+    #adorno-footer {
+        display: none;
+    }
+    #conversion {
+        background-repeat: no-repeat;
+        background-position: -175px;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    #menu {
+        float: right;
+        margin: 40px 0px;
+    }
+    li {
+        display: inline-block;
+        margin: 0px 5px;
+    }
+    .columnas {
+        height:50%;
+    }
+    .fila {
+        float: left;
+        height: 100%;
+        width: 50%;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .texto-fila {
+        top: 25%;
+    }
+    #boton-menu {
+        display: none;
+    }
+    footer p, dd {
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    li {
+        margin: 0px 10px;
+    }
+    dl {
+        width: 100%;
+        padding: 0px;
+    }
+    .cansado {
+        float: left;
+        width: 50%;
+        padding: 30px 15px;
+    }
+    .descripciones {
+        min-width: 482px;
+        max-width: 525px;
+        overflow: hidden;
+        position: relative;
+        min-height: 210px
+    }
+    .texto-descripcion {
+        position: absolute;
+        left: 21%;
+        min-width: 397px;
+        height: auto;
+    }
+    .icon {
+        float: left;
+        width: 19%;
+        height: auto;
+    }
+}
